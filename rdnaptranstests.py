@@ -50,7 +50,7 @@ class TestRdNapTrans(unittest.TestCase):
             expected_phi, expected_lmbd, expected_h = geograpic
             phi, lmbd, h = transformer.rdnap2etrs(x, y, z)
             self.assertAlmostEqual(phi, expected_phi, DeltaAnglePlaces)
-            self.assertAlmostEqual(lmbd, expected_lmbd, DeltaRdPlaces)
+            self.assertAlmostEqual(lmbd, expected_lmbd, DeltaAnglePlaces)
             self.assertAlmostEqual(h, expected_h, DeltaHPlaces)
 
 
